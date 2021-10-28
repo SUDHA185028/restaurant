@@ -1,7 +1,140 @@
 <head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </style>
+    <style>
+        body{
+            min-height: 100vh;
+            background-image: url('https://jolly-kalam-23776e.netlify.app/restaurantwebsite/assets/images/topography.svg'),linear-gradient(110deg,#3dcdf9,#f93d8b);
+            margin: 50px;
+            /* padding: 10px; */
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        .bootstrap{
+            display: grid;
+            gap: 20px;
+        }
+        .bootstrap h1{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            grid-column: 1;
+            font-weight: bold;
+            margin: 0;
+        }
+        .fontawesome h1{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            grid-column: 1;
+            font-weight: bold;
+            margin: 0;
+        }
+        .bootstrap h1::after,.bootstrap h1::before{
+            display: block;
+            content: '';
+            height: 10px;
+            background: black;
+        }
+        .fontawesome h1::after,.fontawesome h1::before{
+            display: block;
+            content: '';
+            height: 10px;
+            background: black;
+        }
+        .display{
+            display: inline;
+        }
+        .height{
+            height: 500px;
+        }
+        .color{
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary">try</button>
+    <div class="container">
+        <div class="bootstrap">
+            <h1>BOOTSTRAP</h1>
+            <div class="butn">
+                <h3>BUTTON</h3>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-primary">try</button>
+            </div>
+            <div class="crd">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://source.unsplash.com/random/201x201" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            <div class="dropdown">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active color" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link color" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link color" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link color" href="#">Disabled</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="prog">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+        </div>
+        <div class="fontawesome">
+            <h1>FONT AWESOME</h1>
+            <div>
+                <i class="fa fa-camera-retro fa-5x"></i>
+            </div>
+        </div>
+    </div>
 </body>
